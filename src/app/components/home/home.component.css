@@ -1,0 +1,61 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 20px 10px;
+}
+table{
+    width: fit-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+    font-size: 2rem;
+}
+table, th, tr{
+    border-collapse: collapse;
+}
+table tr {
+    width: fit-content;
+    
+}
+.cabecalho-tabela{
+    /* background: rgba(0, 0, 255, 0.171); */
+    background: linear-gradient(to right, rgba(0, 128, 0, 0.459), rgba(173, 216, 230, 0.555));
+}
+
+table tr th{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+table tr td{
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+table tr:nth-child(odd)+*{
+    background: linear-gradient(to right, rgba(18, 255, 18, 0.459), rgba(173, 216, 230, 0.555));
+}
+table tr:nth-child(even)+*{
+    background: linear-gradient(to right, rgba(18, 255, 18, 0.459), rgba(173, 216, 230, 0.555));
+
+}
+.visivel{
+    display: flex;
+    width: fit-content;
+    color: white;
+    background: radial-gradient(circle at 80% 10%, white, black);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.oculto{
+    display: none;
+}

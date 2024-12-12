@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="flex">
+  <table>
+    <tr class="cabecalho-tabela">
+      <th>nome</th>
+      <th>idade</th>
+    </tr>
+    @for(pessoa of pessoas; track pessoa){
+    <tr>
+      <td>{{pessoa.nome}}</td>
+      <td>{{pessoa.idade}}</td>
+    </tr>
+    }
+  
+  </table>
+  <button (click) = "gerarPessoas()" [class] = "isAtivo ? 'visivel' : 'oculto'" [textContent] = "textoBtn"></button>
+</div> 
